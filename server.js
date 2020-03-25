@@ -58,6 +58,8 @@ function handleLocationEvent(event) {
             "imageAspectRatio": "rectangle",
             "imageSize": "cover"
           }
+	  "type": "text",
+          "text": "> Missing Data <"
         }
         resolve(client.replyMessage(event.replyToken, msg))
       } else {
