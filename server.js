@@ -50,15 +50,13 @@ function handleLocationEvent(event) {
         }))
     
         var msg = {
-          "type": "text",
-          "text": "> Missing Data <"
-	  // "type": "template",
-          // "altText": "ข้อมูลสถานที่",
-          // "template": {
-          // "type": "carousel",
-          // "columns": pinData,
-          // "imageAspectRatio": "rectangle",
-          // "imageSize": "cover"
+	  "type": "template",
+          "altText": "ข้อมูลสถานที่",
+          "template": {
+          	"type": "carousel",
+          	"columns": pinData,
+          	"imageAspectRatio": "rectangle",
+          	"imageSize": "cover"
           }
         }
         resolve(client.replyMessage(event.replyToken, msg))
