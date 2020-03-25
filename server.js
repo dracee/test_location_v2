@@ -65,8 +65,8 @@ function handleLocationEvent(event) {
           "type": "text",
           "text": "> Missing Data <"                                 
         }
-        resolve(client.replyMessage(event.replyToken, msg))
-        //reject()
+        //resolve(client.replyMessage(event.replyToken, msg))
+        reject(msg)
       }
     })
   })
